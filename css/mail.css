@@ -1,0 +1,116 @@
+@charset "UTF-8";
+
+body {
+	background-color: #f9f9f9;
+}
+#formWrap, .form-done {
+	width: 100%;
+	max-width:700px;
+	margin:60px auto 0;
+	color:#555;
+	line-height:120%;
+	font-size:90%;
+	padding: 0 10px;
+}
+table.formTable{
+	width:100%;
+	margin:0 auto;
+	border-collapse:collapse;
+}
+table.formTable td {
+	background: #fff;
+}
+table.formTable td,table.formTable th{
+	border:1px solid #ccc;
+	padding:10px;
+}
+table.formTable th{
+	width:30%;
+	font-weight:normal;
+	background:#efefef;
+	text-align:left;
+}
+p.error_messe{
+	margin:5px 0;
+	color:red;
+}
+.form-btn {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+	margin: 20px 0;
+}
+.form-btn .btn input {
+  background: #d4b079;
+  color: #fff;
+  margin: 20px 0 0 0;
+	border: none;
+	width: 220px;
+	display: block;
+    height: 100%;
+	border-radius: 0.3rem;
+}
+.form-btn .btn.reset input {
+  margin: 20px 0 0 20px;
+  background: #666;
+}
+.form-btn .btn input:hover {
+	opacity: .8;
+	transition: .8s;
+}
+h3 {
+	text-align: center;
+	font-size: 20px;
+    font-weight: normal;
+}
+h3 + p {
+	margin: 20px 0 40px;
+}
+.form-done {
+	
+}
+.form-done .btn {
+	color: #d4b079;
+}
+.text1 {
+	color: #333;
+	line-height: 1.5em;
+	font-size: 14px;
+}
+.copy {
+	display: block;
+    text-align: center;
+    margin: 15px 0;
+    font-size: 11px;
+    color: #aaa;
+    text-decoration: none;
+}
+
+
+@media screen and (max-width:572px) {
+#formWrap {
+	margin:40px auto;
+}
+table.formTable th, table.formTable td {
+	width:auto;
+	display:block;
+}
+table.formTable th {
+	margin-top:5px;
+	border-bottom:0;
+}
+input[type="submit"], input[type="reset"], input[type="button"] {
+	display:block;
+	width:100%;
+	height:40px;
+}
+}
+
+@media (max-width: 479px) {
+	.form-btn > div {
+		margin: 0 auto 20px;
+	}
+.form-btn .btn.reset input {
+    margin: 20px 0 0;
+  }
+}
